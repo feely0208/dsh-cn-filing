@@ -46,7 +46,11 @@ dsh plugin --profile web add @deepwhale-cn/dsh-cn-filing
 npx @deepwhale-cn/dsh-cn-filing
 ```
 
-![dsh-cn-filing 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-cn-filing/report.png)
+![dsh-cn-filing 检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-cn-filing/report.png)
+
+![dsh-cn-filing 演示模式输出](https://www.deepwhale.org.cn/plugin-assets/dsh-cn-filing/demo.png)
+
+![dsh-cn-filing 规则与依据](https://www.deepwhale.org.cn/plugin-assets/dsh-cn-filing/rules.png)
 
 ## 用法
 
