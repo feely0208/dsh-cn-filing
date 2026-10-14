@@ -46,7 +46,7 @@ dsh plugin --profile web add @deepwhale-cn/dsh-cn-filing
 npx @deepwhale-cn/dsh-cn-filing
 ```
 
-![dsh-cn-filing 的检查报告示例](https://raw.githubusercontent.com/feely0208/dsh-cn-filing/main/docs/report.png)
+![dsh-cn-filing 的检查报告示例](https://www.deepwhale.org.cn/plugin-assets/dsh-cn-filing/report.png)
 
 ## 用法
 
