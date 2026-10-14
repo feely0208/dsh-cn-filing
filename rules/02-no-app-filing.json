@@ -1,0 +1,31 @@
+{
+  "id": "FILING-NO-APP",
+  "title": "移动应用里找不到 APP 备案号",
+  "severity": "high",
+  "source": "《工业和信息化部关于开展移动互联网应用程序备案工作的通知》（工信部信管〔2023〕105号）—— 从事 APP 互联网信息服务的，应履行备案手续；《移动互联网应用程序备案管理办法》",
+  "advice": "本规则**只在检测到移动端项目时运行**（识别标志：uniapp/react-native/flutter/AndroidManifest 等）。2023 年起 APP 也需要单独备案（以前只有网站要）。APP 应在启动页、首页或「关于」页展示备案号。如果这条报了，说明项目是移动端但找不到备案号展示。",
+  "check": {
+    "type": "files-lack",
+    "pattern": "APP备案|app备案|应用备案|备案号|ICP备",
+    "flags": "i",
+    "paths": [
+      "**/app.json",
+      "**/pages.json",
+      "**/manifest.json",
+      "**/AndroidManifest.xml",
+      "**/Info.plist",
+      "**/about*.vue",
+      "**/about*.html",
+      "**/about*.tsx",
+      "**/about*.ets",
+      "**/settings*.vue",
+      "**/settings*.html",
+      "**/mine*.vue",
+      "**/profile*.vue",
+      "**/*.uvue",
+      "**/*.wxml"
+    ],
+    "evidence": "移动端相关文件里找不到 APP 备案号",
+    "when": "uni-app|uniapp|react-native|flutter|AndroidManifest|Info.plist|\"appid\"|weex|taro|mp-weixin|cordova|capacitor"
+  }
+}
