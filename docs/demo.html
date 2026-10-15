@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#0d0f13; display:flex; justify-content:center;
+         align-items:flex-start; padding:22px; font-family:-apple-system,"PingFang SC",
+         "Helvetica Neue",sans-serif; }
+  .win { width:1180px; border-radius:11px; overflow:hidden;
+          box-shadow:0 14px 44px rgba(0,0,0,.55); }
+  .bar { background:#2a2d34; padding:11px 15px; display:flex; align-items:center; gap:9px; }
+  .dot { width:12px; height:12px; border-radius:50%; }
+  .t { margin-left:11px; color:#7a8290; font-size:13px; letter-spacing:.02em; }
+  .term { background:#1b1d22; padding:20px 22px 24px; font-family:"SF Mono",Menlo,Consolas,
+           "PingFang SC",monospace; font-size:13.5px; line-height:1.72; }
+  .cmd { color:#5ee08a; margin-bottom:13px; font-size:13.5px; }
+  .cmd b { color:#fff; font-weight:600; }
+  .l { white-space:pre-wrap; word-break:break-word; }
+</style></head><body>
+  <div class="win">
+    <div class="bar">
+      <span class="dot" style="background:#ff5f57"></span>
+      <span class="dot" style="background:#febc2e"></span>
+      <span class="dot" style="background:#28c840"></span>
+      <span class="t">dsh-cn-filing · demo</span>
+    </div>
+    <div class="term">
+      <div class="cmd">$ <b>dsh-cn-filing --demo</b></div>
+      <div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  【演示模式】使用内置样本，不是你的真实项目。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  深鲸守护 · 备案公示检查 v0.1.0</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+<div class="l"><span style="color:#d8dee9">  扫描范围   内置演示样本 · 故意有问题的项目</span></div>
+<div class="l"><span style="color:#d8dee9">             3 个文件 · 0 个目录已跳过</span></div>
+<div class="l"><span style="color:#d8dee9">  检查规则   3/4 条 （1 条因不适用本项目未运行：FILING-NO-APP）</span></div>
+<div class="l"><span style="color:#ffd166">  命中       3 条</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ff6b6b">  【高】2 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 应用里找不到 ICP 备案号展示</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  **/*.html</span></div>
+<div class="l"><span style="color:#7a8290">      证据  已检查 3 个文件，均未提到</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《互联网信息服务管理办法》第四条 —— 从事经营性互联网信息服务应取得经营许可证，非经营性应履行备案手续；第十二条 —— 应在网站主页面标明备案编号</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  代码里找不到 ICP 备案号的展示痕迹（形如「京ICP备12345678号-1」）。备案号必须**在网站/应用显著位置标明**，并链接到工信部备案系统（beian.miit.gov.cn）。这是网信和工信检查的第一项。如果备案在部署层（比如由模板统一渲染），请在文档里写明。</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到隐私政策入口</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  **/*.html</span></div>
+<div class="l"><span style="color:#7a8290">      证据  已检查 3 个文件，均未提到</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《个人信息保护法》第十七条 —— 处理个人信息前应以显著方式、清晰易懂的语言真实准确完整地向个人告知；《App 违法违规收集使用个人信息行为认定方法》—— 「未公开收集使用规则」</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  代码里找不到隐私政策的入口（链接/页面/弹窗）。监管明确把「未公开收集使用规则」列为违规行为。要求：① 首次启动时弹窗展示并需用户确认；② 后续可从设置页再次打开；③ 链接必须可访问。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#ffd166">  【中】1 条</span></div>
+<div class="l"><span style="color:#7a8290">    · 找不到运营者主体信息</span></div>
+<div class="l"><span style="color:#d8dee9">      位置  **/*.html</span></div>
+<div class="l"><span style="color:#7a8290">      证据  已检查 2 个文件，均未提到</span></div>
+<div class="l"><span style="color:#7a8290">      依据  《互联网信息服务管理办法》第十二条 —— 应在网站主页面标明经营许可证编号或备案编号；《个人信息保护法》第十七条 —— 应告知个人信息处理者的名称和联系方式</span></div>
+<div class="l"><span style="color:#d8dee9">      建议  找不到运营主体的名称与联系方式。个保法要求告知「个人信息处理者的名称和联系方式」，实践中通常放在隐私政策里或页脚（公司名 + 邮箱/电话）。这不是「必须展示在首页」，但**必须可被用户找到**。</span></div>
+<div class="l"><span style="color:#7a8290">&nbsp;</span></div>
+<div class="l"><span style="color:#d8dee9">  ──────────────────────────────────────────────────────────────────</span></div>
+    </div>
+  </div>
+</body></html>
