@@ -1,5 +1,7 @@
 # @deepwhale-cn/dsh-cn-filing
 
+[![dshfind 收录](https://dshfind.com/api/badge/feely0208/dsh-cn-filing?lang=zh)](https://dshfind.com/zh/plugins/feely0208/dsh-cn-filing)
+
 **备案公示检查** —— 查应用里有没有 ICP 备案号、APP 备案号、隐私政策入口、运营者信息。
 
 ## 不装它会怎样
