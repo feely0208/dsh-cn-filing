@@ -20,7 +20,7 @@ echo ""; echo "  【条件规则】APP 备案规则在纯 Web 项目上必须【
 NA=$(echo "$J" | python3 -c "
 import json,sys; d=json.load(sys.stdin)
 print(','.join((d.get('stats') or {}).get('notApplicable') or []))" 2>/dev/null)
-echo "$NA" | grep -q "FILING-NO-APP" && ok "纯 Web 项目：FILING-NO-APP 判为不适用（$NA）" || bad "条件规则没生效（notApplicable=$NA）"
+echo "$NA" | grep -q "FILING-NO-APP" && ok "纯 Web 项目：FILING-NO-APP 判为不适用（${NA}）" || bad "条件规则没生效（notApplicable=${NA}）"
 echo ""; echo "  【溯源】每条规则必须带 source 且引法条"
 python3 - <<'PY' && ok "全部规则均有 source 且引法条" || bad "有规则缺 source/法条"
 import json,glob,sys
